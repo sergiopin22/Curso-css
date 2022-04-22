@@ -1,5 +1,5 @@
 body{
-    background-color: black;
+     background-color: black;
 }
 
 /** Selectores de Css */
@@ -70,3 +70,19 @@ body{
         color: red;
     } */
 
+    /* *Colores Rgb */
+    /* _Un valor de color RGB representa fuentes de luz ROJA, VERDE y AZUL. */
+    /* ?Cada parámetro (rojo, verde y azul) define la intensidad del color entre 0 y 255. */
+
+    /* *ejemplo */
+
+    .canvas{
+        width:100px;
+        height:100px;
+        background-color:rgba(60, 80, 250, 0.4);
+    }
+
+    /* *Color Rgba */
+    /* _Los valores de color RGBA son una extensión de los valores de color RGB con un canal alfa, que especifica la opacidad de un color. */
+    /* ?rgba ( rojo, verde , azul, alfa ) */
+    /* _El parámetro alfa es un número entre 0.0 (totalmente transparente) y 1.0 (nada transparente): */

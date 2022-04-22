@@ -1,0 +1,61 @@
+
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+.container{
+    background-color: rgb(61, 73, 73);
+    height: 30vh;
+    display: flex;
+    /* flex-direction:row;
+    flex-wrap:wrap-reverse; */
+    flex-flow:row wrap; /*aca estamos acortando las dos lineas anteriores  con flex-flow*/
+    justify-content:flex-start;
+    align-items:center;
+    /* *align-items: stretch | flex-start | flex-end | center | baseline | */
+}
+
+.item{
+    background-color: rgb(0, 0, 0);
+    border: medium solid gray;
+    width: 20%;
+    /* height: 20%; */
+    color:white;
+}
+
+/* .item:nth-child(2),
+.item:nth-child(17){
+    font-size:250%;
+} */
+
+
+/* *Flexbox */
+
+/*_ OJO FLEXBOX TRABAJA CON UN EJE, Y ES PRINCIPAL QUE LE DAMOS YA PUEDE SER EL EJE X O Y, ROW O COLUMN  */
+
+/* *FLEX DIRECTION Y FLEX WRAP */
+
+/* !display:flex; activamos el flexbox a la caja padre  
+
+_flex-direction: row|row-reverse|column|column-reverse;
+
+_flex-wrap: nowrap|wrap|wrap-reverse; */
+
+/* !HAY UN ACORTADOR QUE SE LLAMA FLEX-FLOW Y ENGLOBA A FLEX DIRECTION Y WRAP */
+
+/*_ flex-flow:row wrap; recibe 2 parametros (flex-direction, flex-wrap) asi como estan en los parentesis en orden */
+
+/* *JUSTIFY-CONTENT */
+/* !JUSTIFY-CONTENT NOS PERMITE ALINEAR LOS ELEMENTOS HIJOS A UN CONTENEDOR PADRE EN BASE AL EJE PRINCIPAL */
+/* _PROPIEDADES DEL JUSTIFY-CONTENT:flex-start|center|flex-end|space-between|space-around|space-evenly; */
+
+/* *ALIGN-ITEMS */
+/* !JUSTIFY-CONTENT NOS PERMITE ALINEAR LOS ELEMENTOS HIJOS A UN CONTENEDOR PADRE EN BASE AL EJE TRANSVERSAL OSEA AL EJE CONTRARIO DEL PRINCIPAL */
+/* _PROPIEDADES DEL ALIGN-ITEMS:stretch | flex-start | flex-end | center | baseline; */
+
+/* _NOTA IMPORTANTE STRETCH ES POR DEFAULT DE ALIGN-ITEMS PERO PARA QUE SE ESTIRE LOS ELEMENTOS DE ALTO DE LA CAJA CONTAINER O PADRE LOS ITEMS O HIJO NO DEBEN TENER DEFINIDO EL ALTO Y EL ANCHO */
+
+/* *ALIGN-CONTENT */
+
+
